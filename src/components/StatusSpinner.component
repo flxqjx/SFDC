@@ -9,7 +9,7 @@
      <apex:facet name="start">
           <div id="loadingDiv" class="loadingDiv" >
                <span id="loadingHolder" class="loadingHolder">
-                    <img class="loadingImage" title="Loading..." alt="Loading..." src="/img/loading.gif"/>
+                    <img class="loadingImage" title="Loading..." alt="Loading..." src="{!$Resource.Loading}"/>
                     <span class="loadingDescription">{!message}</span>
                </span>
           </div>
