@@ -1,0 +1,12 @@
+<apex:page sidebar="false" controller="BatchInsertByCsvController" showHeader="false">
+   <apex:form >
+      <apex:sectionHeader title="通过csv文件导入vendor"/>
+      <apex:pagemessages />
+      <apex:pageBlock >
+             <center>
+              <apex:inputFile value="{!contentFile}" filename="{!fileName}" /> 
+              <apex:commandButton action="{!ReadFileAndOperate}" value="Batch insert"/>
+             </center>  
+      </apex:pageBlock>       
+   </apex:form>   
+</apex:page>

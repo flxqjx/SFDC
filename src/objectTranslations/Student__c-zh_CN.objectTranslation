@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>学生</value>
+    </caseValues>
+    <fields>
+        <label><!-- 学历 --></label>
+        <name>Education__c</name>
+        <picklistValues>
+            <masterLabel>专科</masterLabel>
+            <translation><!-- 专科 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>初中</masterLabel>
+            <translation><!-- 初中 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>博士</masterLabel>
+            <translation><!-- 博士 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>小学</masterLabel>
+            <translation><!-- 小学 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>文盲</masterLabel>
+            <translation><!-- 文盲 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>本科</masterLabel>
+            <translation><!-- 本科 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>硕士</masterLabel>
+            <translation><!-- 硕士 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>高中</masterLabel>
+            <translation><!-- 高中 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 成绩 --></label>
+        <name>ScoreID__c</name>
+        <relationshipLabel><!-- 学生 --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 性别 --></label>
+        <name>Sex__c</name>
+        <picklistValues>
+            <masterLabel>女</masterLabel>
+            <translation><!-- 女 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>男</masterLabel>
+            <translation><!-- 男 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 生日 --></label>
+        <name>birthday__c</name>
+    </fields>
+    <fields>
+        <label><!-- 生日提醒时间 --></label>
+        <name>remainder__c</name>
+    </fields>
+    <layouts>
+        <layout>学生 布局</layout>
+        <sections>
+            <label><!-- 新建部分 --></label>
+            <section>新建部分</section>
+        </sections>
+        <sections>
+            <label><!-- 自定义链接 --></label>
+            <section>自定义链接</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- 分数没有及格 --></errorMessage>
+        <name>ScoreOK</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- q --></label>
+        <name>q</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- showButton --></label>
+        <name>showButton</name>
+    </webLinks>
+</CustomObjectTranslation>
