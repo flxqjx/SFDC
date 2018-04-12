@@ -1,0 +1,48 @@
+<apex:page controller="StudentController" showHeader="false">
+<apex:messages />
+<apex:form >
+    <apex:facet name="showHeader">ss</apex:facet>
+    <apex:pageBlock title="学生">
+        <apex:pageBlockSection >
+            <apex:inputText value="{!name}" id="name" label="姓名：" tabindex="1"/>
+            <apex:selectList multiselect="false" value="{!sexType}" label="性别：" tabindex="2" size="1">
+                <apex:selectOptions value="{!sexTypes}">
+                </apex:selectOptions>
+            </apex:selectList>
+            <apex:inputText value="{!birthdayStart}" tabIndex="4" label="生日开始时间：" />
+            <apex:selectList multiselect="false" value="{!educationType}" label="学历：" tabindex="3" size="1">
+                <apex:selectOptions value="{!educationTypes}">
+                </apex:selectOptions>
+            </apex:selectList>
+            <apex:inputText value="{!birthdayEnd}"  tabIndex="5"  label="生日结束时间：" />
+            <apex:commandButton value="查询" action="{!query}" />
+         </apex:pageBlockSection>
+         <apex:pageBlockTable value="{!sduentList}" var="student">
+              <apex:column headerValue="姓名">
+                  <apex:inputText value="{!student.Name}"></apex:inputText>
+              </apex:column>
+              <apex:column headerValue="性别">
+                  <apex:inputText value="{!student.Sex__c}"></apex:inputText>
+              </apex:column>
+              <apex:column headerValue="学历">
+                  <apex:inputText value="{!student.Education__c}"></apex:inputText>
+              </apex:column>
+              <apex:column headerValue="生日">
+                 <apex:outputtext value="{0,date,yyyy-MM-dd}">
+                    <apex:param value="{!student.birthday__c}"></apex:param>
+                </apex:outputtext>
+              </apex:column>
+              <apex:column headerValue="操作">
+                  <apex:commandLink value="删除" action="{!deleteStu}">
+                      <apex:param name="stuId" value="{!student.Id}"></apex:param>
+                  </apex:commandLink>
+              </apex:column>
+         </apex:pageBlockTable>
+           <apex:pageBlockSection >
+                <apex:commandButton value="增加" action="{!add}" />
+                <apex:commandButton value="保存" action="{!save}" />
+            </apex:pageBlockSection>
+            <apex:pageMessages />
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

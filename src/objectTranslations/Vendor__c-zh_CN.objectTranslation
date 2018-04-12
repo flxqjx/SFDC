@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>供应商</value>
+    </caseValues>
+    <fields>
+        <label><!-- 编码英文名称 --></label>
+        <name>Vendor_Code_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- 编码 --></label>
+        <name>Vendor_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- 供应商名字 --></label>
+        <name>Vendor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- 城市 --></label>
+        <name>city__c</name>
+        <picklistValues>
+            <masterLabel>房山</masterLabel>
+            <translation><!-- 房山 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>武汉</masterLabel>
+            <translation><!-- 武汉 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>襄阳</masterLabel>
+            <translation><!-- 襄阳 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 省份 --></label>
+        <name>provice__c</name>
+        <picklistValues>
+            <masterLabel>北京</masterLabel>
+            <translation><!-- 北京 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>湖北</masterLabel>
+            <translation><!-- 湖北 --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>
